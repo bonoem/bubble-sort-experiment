@@ -1,0 +1,37 @@
+\begin{table*}[t]
+\centering
+\caption{Descriptive Statistics: Five-Number Summary, Mean, Standard Deviation, and 95\% Confidence Intervals ($N=1,000$ and $N=5,000$ Integers, 30 Repetitions per Condition). All measurements in milliseconds.}
+\label{tab:descriptive_stats}
+\small
+\begin{tabular}{llrcccccccc}
+\toprule
+\textbf{Size ($N$)} & \textbf{Distribution} & \textbf{Algorithm} & \textbf{Mean (ms)} & \textbf{95\% CI (ms)} & \textbf{Std Dev} & \textbf{Min} & \textbf{Q1} & \textbf{Median} & \textbf{Q3} & \textbf{Max} \\
+\midrule
+1,000 & Random & PassPerItem & 2.275 & [2.239, 2.312] & 0.099 & 2.087 & 2.194 & 2.296 & 2.356 & 2.439 \\
+ & Random & UntilNoChange & 2.355 & [2.300, 2.410] & 0.148 & 2.125 & 2.292 & 2.314 & 2.405 & 2.854 \\
+ & Random & WhileNeeded & 1.657 & [1.626, 1.687] & 0.082 & 1.512 & 1.606 & 1.652 & 1.711 & 1.871 \\
+ & Nearly Sorted & PassPerItem & 1.327 & [1.298, 1.356] & 0.078 & 1.176 & 1.276 & 1.318 & 1.384 & 1.560 \\
+ & Nearly Sorted & UntilNoChange & 1.358 & [1.319, 1.396] & 0.104 & 1.137 & 1.289 & 1.367 & 1.409 & 1.653 \\
+ & Nearly Sorted & WhileNeeded & 0.872 & [0.798, 0.946] & 0.198 & 0.745 & 0.788 & 0.824 & 0.878 & 1.857 \\
+ & Reverse Sorted & PassPerItem & 2.458 & [2.397, 2.519] & 0.163 & 2.217 & 2.394 & 2.438 & 2.479 & 2.972 \\
+ & Reverse Sorted & UntilNoChange & 2.608 & [2.478, 2.738] & 0.347 & 2.376 & 2.462 & 2.551 & 2.626 & 4.361 \\
+ & Reverse Sorted & WhileNeeded & 1.902 & [1.853, 1.951] & 0.131 & 1.752 & 1.826 & 1.886 & 1.944 & 2.436 \\
+ & Sorted & PassPerItem & 1.049 & [1.020, 1.079] & 0.079 & 0.936 & 1.008 & 1.041 & 1.065 & 1.275 \\
+ & Sorted & UntilNoChange & 0.002 & [0.002, 0.002] & 0.000 & 0.001 & 0.002 & 0.002 & 0.002 & 0.003 \\
+ & Sorted & WhileNeeded & 0.002 & [0.002, 0.002] & 0.000 & 0.002 & 0.002 & 0.002 & 0.002 & 0.003 \\
+\midrule
+5,000 & Random & PassPerItem & 58.532 & [57.527, 59.536] & 2.691 & 55.779 & 57.015 & 57.427 & 58.731 & 66.759 \\
+ & Random & UntilNoChange & 59.983 & [58.998, 60.968] & 2.638 & 57.230 & 58.414 & 59.266 & 60.153 & 67.579 \\
+ & Random & WhileNeeded & 41.120 & [40.136, 42.105] & 2.637 & 39.285 & 39.683 & 40.411 & 41.220 & 52.980 \\
+ & Nearly Sorted & PassPerItem & 34.293 & [33.991, 34.595] & 0.808 & 32.441 & 33.774 & 34.198 & 34.899 & 35.822 \\
+ & Nearly Sorted & UntilNoChange & 38.157 & [37.493, 38.820] & 1.777 & 35.334 & 37.003 & 37.805 & 39.311 & 44.286 \\
+ & Nearly Sorted & WhileNeeded & 22.645 & [22.184, 23.106] & 1.234 & 21.479 & 22.317 & 22.460 & 22.687 & 28.714 \\
+ & Reverse Sorted & PassPerItem & 61.394 & [60.619, 62.169] & 2.076 & 58.580 & 60.300 & 60.752 & 61.828 & 68.535 \\
+ & Reverse Sorted & UntilNoChange & 64.447 & [64.028, 64.867] & 1.124 & 62.904 & 63.812 & 64.225 & 64.884 & 67.954 \\
+ & Reverse Sorted & WhileNeeded & 47.501 & [47.122, 47.879] & 1.014 & 46.674 & 47.024 & 47.244 & 47.549 & 51.194 \\
+ & Sorted & PassPerItem & 27.470 & [27.171, 27.770] & 0.801 & 26.464 & 26.976 & 27.356 & 27.775 & 30.576 \\
+ & Sorted & UntilNoChange & 0.009 & [0.008, 0.010] & 0.002 & 0.007 & 0.007 & 0.008 & 0.009 & 0.018 \\
+ & Sorted & WhileNeeded & 0.008 & [0.007, 0.009] & 0.002 & 0.007 & 0.008 & 0.008 & 0.008 & 0.018 \\
+\bottomrule
+\end{tabular}
+\end{table*}

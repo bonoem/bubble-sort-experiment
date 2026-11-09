@@ -1,0 +1,13 @@
+# Build and temporary files
+*.class
+exp01/*.class
+.lecture_txt/
+*.aux
+*.log
+*.out
+*.synctex.gz
+report/*.aux
+report/*.log
+report/*.out
+report/*.synctex.gz
+.DS_Store
